@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-brand{
+    font-size: 25px;
+    color: orange; 
+    margin-right: 50px;
+    animation: fadeInDown 2s;
+}
+li:hover{
+    font-weight: bold;
+}
+.container-fluid img{
+    width: 50px;
+    margin-left: 5px;
+}
+
+.fade-indown-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 45px;
+    color: orange;
+    animation: fadeInDown 1s;
+  }
+  @keyframes fadeInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 
+ .zoom-in{
+    animation: zoom-in 3s;
+    color: red;
+    font-size: 65px;
+ }
+ @keyframes zoom-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container-fluid img{
+    width: 50px;
+    margin-left: 5px;
+}
+.navbar-brand{
+    font-size: 25px;
+    color: orange; 
+    margin-right: 50px;
+}
+p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+h1{
+    margin-top: 20px;
+    font-size: 55px;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0% {
+       opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+ } 
+h2{
+    margin-top: 30px;
+    font-size: 45px;
+    animation: fadeInLeft 4s;
+}
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+h3{
+    margin-top: 15px;
+}
+img{
+    animation: zoom-in 2s;
+}
+@keyframes zoom-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

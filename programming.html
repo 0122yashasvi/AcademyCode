@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="p_style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img.png" alt="">AcademyCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programming.html">Programming</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about_.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                                target=”_blank”>HTML</a></li>
+                            <li><a class="dropdown-item"
+                                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics"
+                                target=”_blank”>CSS</a></li>
+                            <li><a class="dropdown-item" href="https://www.w3schools.com/c/c_intro.php" target=”_blank”>C Language</a>
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.python.org/doc/essays/blurb/" target=”_blank”>Phyton</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_.html">Contact Us</a>
+                    </li>
+                </ul>
+                
+                <div class="mx-2">
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login your account</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Signup to AcademyCode</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="row g-3 align-items-center">
+                                            <div class="col-auto">
+                                                <label for="inputPassword6" class="col-form-label">Password</label>
+                                            </div>
+                                            <div class="col-auto">
+                                                <input type="password" id="inputPassword6" class="form-control"
+                                                    aria-describedby="passwordHelpInline">
+                                            </div>
+                                            <div class="col-auto">
+                                                <span id="passwordHelpInline" class="form-text">
+                                                    Must be 8-20 characters long.
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>What Is Programming? And How To Get Started</h1>
+        <p>Learn the definition of programming, some common programming languages, and steps to begin building programming experience.</p>
+        <img src="1.png" class="img-fluid" alt="Responsive image">
+        <h2>What is programming?</h2>
+        <p>Programming refers to a technological process for telling a computer which tasks to perform in order to solve problems. You can think of programming as a collaboration between humans and computers, in which humans create instructions for a computer to follow (code) in a language computers can understand.</p>
+        <p>Programming enables so many things in our lives. Here are some examples: </p>
+        <ul>
+            <li>When you browse a website to find information, contact a service provider, or make a purchase, programming allows you to interact with the site’s on-page elements, such as sign-up or purchase buttons, contact forms, and drop-down menus.</li>
+            <li>The programming behind a mobile app can make it possible for you to order food, book a rideshare service, track your fitness, access media, and more with ease. </li>
+            <li>Programming helps businesses operate more efficiently through different software for file storage and automation and video conferencing tools to connect people globally, among other things. </li>
+            <li>Space exploration is made possible through programming.  </li>
+        </ul>
+        <h2>How does computer programming work?</h2>
+        <p>At its most basic, programming tells a computer what to do. First, a programmer writes code—a set of letters, numbers, and other characters. Next, a compiler converts each line of code into a language a computer can understand. Then, the computer scans the code and executes it, thereby performing a task or series of tasks. Tasks might include displaying an image on a webpage or changing the font of a section of text. </p>
+        <h2>Most used programming languages</h2>
+        <p>Different programming languages enable programmers to write code that computers understand. According to a survey by Statista, the top five programming languages that developers use as of June 2022 are: </p>
+        <ul>
+            <li>JavaScript, used by 65.36 percent</li>
+            <li>HTML/CSS, used by 55.08 percent</li>
+            <li>SQL, used by 49.43 percent</li>
+            <li>Python, used by 48.07 percent </li>
+            <li>TypeScript, used by 34.83 percent</li>
+        </ul>
+        <h2>Types of programming languages</h2>
+        <p>While hundreds of programming languages (if not thousands) exist, and there are many ways to classify them, they typically can be grouped into five main categories:</p>
+        <ol>
+            <li>Procedural programming languages</li>
+            <li>Functional programming languages</li>
+            <li>Object-oriented programming languages</li>
+            <li>Scripting languages</li>
+            <li>Logic programming languages</li>
+        </ol>
+        <h2>How to get started in computer programming </h2>
+        <p>Follow these steps to embark on a journey in the growing field of programming. </p>
+        <ol>
+            <h3><li>Identify your programming goals. </li></h3>
+            <p>An important first step is to reflect on your goals and motivations. With clarity on what you want to achieve and why, you can align your actions with the outcomes you desire. Here are some examples of programming goals:  </p>
+            <ul>
+                <li>Launch a new programming career in a specific industry.</li>
+                <li>Explore programming in your current role and take on new projects that combine programming with what you already do.</li>
+                <li>Pursue programming as a hobby and complete projects that match your interests. </li>
+            </ul>
+            <h3><li>Enroll in an introductory programming course.</li></h3>
+            <p>Once you know your goals, it’s a good idea to find a course on programming to introduce you to popular programming languages and different avenues for applying programming skills. You can also use an introductory course to refine your goals and focus your efforts. </p>
+            <h3><li>Build essential programming skills.</li></h3>
+            <p>As you’re taking courses, you’ll want to ensure you’re developing essential programming skills, particularly if your goals are to pursue a new career or enhance your current one. While a course you’re enrolled in may provide an overview of important programming skills and then structure the learning experience accordingly, you may find it helpful to find out what employers are looking for. </p>
+            <h3><li>Connect with other programmers.</li></h3>
+            <p>When you build a network and connect with other programmers, you can gain exposure to programming trends, opportunities, and solutions to common challenges. Ways to connect with other programmers include: </p>
+            <ul>
+                <li>Attending tech conferences and networking events </li>
+                <li>Signing up for a coding bootcamp</li>
+                <li>Subscribing to programming influencers and thought leaders</li>
+            </ul>
+            <h3><li>Complete projects.</li></h3>
+            <p>Completing projects is a great way to apply your skills and discover your programming potential. Find tutorials online to complete beginner projects such as: </p>
+            <ul>
+                <li>Creating a mobile app </li>
+                <li>Creating a calculator app</li>
+                <li>Building a simple game</li>
+                <li>Building a basic website from scratch </li>
+            </ul>
+        </ol>
+    </div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2023–2024 AcademyCode, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <div class="container-fluid">
+                <img src="img.png" alt="">
+            </div>
+          </a>
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="programming.html" class="nav-link px-2 text-body-secondary">Programming</a></li>
+            <li class="nav-item"><a href="about_.html" class="nav-link px-2 text-body-secondary">About</a></li>
+            <li class="nav-item"><a href="contact_.html" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+          </ul>
+          <p class="float-end"><a href="#">Back to top</a></p>
+        </footer>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
